@@ -1,0 +1,19 @@
+base:
+  raw_data_dir: data/
+  log_level: INFO
+  batch_size: 2
+  random_state: 42
+  num_workers: 6
+
+train:
+  val_size: 0.3
+  epochs: 3
+  learning_rate: 0.001
+  step_size: 3
+  gamma: 0.1
+
+evaluate:
+  metrics_file: reports/evaluation_metrics.json
+  cm_path: reports/confusion_matrix.png
+  prediction_report: reports/prediction_report.csv
+
